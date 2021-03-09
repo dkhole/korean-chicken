@@ -1,0 +1,46 @@
+#box {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe227;
+    color:  var(--maroon-col);
+}
+
+#wrap {
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+#title {
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    margin-top: 30px;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#message {
+    font-family: var(--prim-ff);
+    font-size: 20px;
+    padding: 0 30px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+}
+
+@media (min-width: 800px) {
+    #box {
+        height: 350px;
+    }
+
+    #wrap {
+        height: 225px;
+    }
+}

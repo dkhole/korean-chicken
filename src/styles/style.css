@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Cabin';
+    src: url("../fonts/cabin.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'LondrinaOut';
+    src: url("../fonts/LondrinaOutline-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'LondrinaSol';
+    src: url("../fonts/LondrinaSolid-Regular.ttf");
+}
+
+:root {
+    --prim-ff: 'Cabin', sans-serif;
+    --robot-ff: 'Roboto', sans-serif;
+    --londrina-out: 'LondrinaOut', sans-serif;
+    --londrina-sol: 'LondrinaSol', sans-serif;
+    --prim-col: #F7DA76;
+    --secondary-col: #fef7e7;
+    --maroon-col: #c71e1e;
+    --test-col: #f5da3e;
+    --test2-col: #63e89e;
+    --test3-col: #f3bc45;
+}
+
+html, body, #gatsby {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#landing-back {
+    background: -webkit-linear-gradient(50deg, #fff810  50%, rgba(0,0,0,0) 50%), -webkit-linear-gradient(60deg, #63e89e 60%, #ff7ee3 60%);
+    background: -o-linear-gradient(50deg, #fff810  50%, rgba(0,0,0,0) 50%), -o-linear-gradient(60deg, #63e89e 60%, #ff7ee3 60%);
+    background: -moz-linear-gradient(50deg, #fff810  50%, rgba(0,0,0,0) 50%), -moz-linear-gradient(60deg, #63e89e 60%, #ff7ee3 60%);
+    background: linear-gradient(50deg,#ff5e78  50%, rgba(0,0,0,0) 50%), linear-gradient(120deg, #ffe227 60%,#63e89e 60%);
+}
+
+
+
+@media(min-width: 800px) {
+
+    #landing-back {
+        background: linear-gradient(100deg,  var(--secondary-col) 55%, var(--prim-col) 55%);
+    }
+}
+
